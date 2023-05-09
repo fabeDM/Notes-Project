@@ -8,11 +8,11 @@
 
 void saveTasksToFile(const std::vector<Task>& tasks, const std:: string& fileName)
 {
-    std::ofstream ostream(fileName);  // of stream is nemed ostream
-    ostream <<tasks.size();   // number of tasks, in this case 3
+    std::ofstream ostream(fileName);  
+    ostream <<tasks.size();   
 
     for(const Task& task : tasks) {
-        std::string description = task.description;  // Buy_Grocaries 1  (1- boolean)
+        std::string description = task.description;  
         std::replace(description.begin(), description.end(), ' ','_');  
 
         ostream << '\n' <<description << ' ' << task.done;
@@ -21,8 +21,6 @@ void saveTasksToFile(const std::vector<Task>& tasks, const std:: string& fileNam
 
 }
  // This is a function that loads tasks from a file and returns a vector of Task objects.
-// pass to file, turn it into vector of task-objects
-
 std::vector<Task>loadTasksFromFile(const std::string& fileName)
 {
     // if(!std::filesystem::exists(fileName)) {    // does file exist
@@ -31,17 +29,17 @@ std::vector<Task>loadTasksFromFile(const std::string& fileName)
     // }
 
     std::vector<Task> tasks;
-    std::ifstream istream(fileName);  //ifstream => open file for reading
+    std::ifstream istream(fileName);  
 
     int n;
-    istream >> n;   //istream  : read int from  istream into "n" and store it.
-    for(int i = 0; i < n; i++) {   //  reads the description and done status of each task from the file
+    istream >> n;  
+    for(int i = 0; i < n; i++) {   
         std::string description;
         bool done;
 
-        istream >> description >> done;   //description no space_ easy to read, threated as one string
+        istream >> description >> done;  
         std::replace (description.begin(), description.end(), '_', ' ');
-        tasks.push_back(Task{description,done});  // object added to the tasks vector
+        tasks.push_back(Task{description,done});  
 
     }
 

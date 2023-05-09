@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/**",
+                "/usr/include/wx-3.0/**",
+                "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0/**",
+                "/usr/share/doc/wx3.0-examples/examples/samples/",
+              //  "${workspaceFolder}/wxWidgets/include",
+              //  "${workspaceFolder}/wxWidgets/include",
+              //  "${workspaceFolder}/wxWidgets/include"
+            ],
+            "defines": [
+                "D_FILE_OFFSET_BITS",
+                "WXUSINGDLL",
+                "__WXGTK__"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

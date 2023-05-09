@@ -1,0 +1,5 @@
+{
+    // "C_Cpp.errorSquiggles": "disabled",
+
+    "cmake.sourceDirectory": "${workspaceFolder}/wxWidgets/3rdparty/catch/.conan/test_package"
+}

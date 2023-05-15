@@ -28,5 +28,7 @@ All created notes on the dashboard are clickable. When a user clicks on a note, 
 All data is saved in an SQLite database. This means that when the user returns to use the QuickNotiz application, all their notes will be retrieved from the database.
 
 
+For testing purposes, we are using the "Catch2" unit testing framework for our C++ program. To run the tests, you can enter the command "make test" in the terminal. To execute the tests, the user needs to type "./test".
+
 
 ![image](https://github.com/fabeDM/Notes-Project/assets/91656344/8cdc909d-4022-4627-9ed6-0e138b0b5e06)

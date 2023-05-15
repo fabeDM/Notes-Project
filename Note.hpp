@@ -10,6 +10,9 @@ public:
     wxString content;
 
     Note(const wxString& _title = "", const wxString& _content = "");
+    
+    wxString getTitle() const;
+    wxString getContent() const;
 };
 
 
